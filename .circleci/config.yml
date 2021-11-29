@@ -48,7 +48,7 @@ jobs:
       - checkout
       - run:
           name: "Say Audit"
-          command: "npm audit"
+          command: "npm audit fix"
   create_infrastructure: 
       docker:
         - image: amazon/aws-cli
