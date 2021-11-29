@@ -13,6 +13,8 @@ Resources:
       - AssociatePublicIpAddress: "true"
         DeviceIndex: "0"
         SubnetId: subnet-082672fbc756d1711
+        GroupSet: 
+          - Ref: InstanceSecurityGroup
           
         
    
