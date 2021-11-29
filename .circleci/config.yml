@@ -70,7 +70,7 @@ jobs:
             command: |
               ansible-playbook -i inventory main-remote.yml
   
-    smoke_test:
+  smoke_test:
       docker:
         - image: alphine:latest
       steps:
