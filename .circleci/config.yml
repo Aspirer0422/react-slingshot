@@ -193,5 +193,6 @@ workflows:
       
       #- smoke_test
       #- create_and_deploy_front_end 
-      - promote_to_production
+      #- promote_to_production
+      - get_last_deployment_id
       
