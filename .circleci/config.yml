@@ -105,7 +105,7 @@ jobs:
 
         - destroy_environment  
 
-  test:
+  test1:
       docker:
         - image: python:3.7-alpine3.11      
       steps:
