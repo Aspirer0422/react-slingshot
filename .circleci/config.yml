@@ -105,11 +105,19 @@ jobs:
 
         - destroy_environment  
 
+  test:
+      docker:
+        - image: python:3.7-alpine3.11      
+      steps:
+        - checkout
+        - run: echo ${CIRCLE_WORKFLOW_ID:0:7}
+
   create_and_deploy_front_end :
       docker:
         - image: amazon/aws-cli
       steps:
         - checkout
+        - run: echo ${CIRCLE_WORKFLOW_ID:0:7}
         - run:
             name: Execute bucket.yml - Create Cloudformation Stack
             command: |
